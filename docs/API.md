@@ -203,7 +203,7 @@ Content-Type: application/json
 
 ```json
 {
-    "email": "sikha@example.com",
+    "email": "saheli@example.com",
     "password": "Test1234"
 }
 ```
