@@ -1,2 +1,6 @@
 # Login-Window
-A secure login and user authentication system using Node.js, Express.js, and MongoDB.
+
+A simple fullstack login system for the lab project.
+
+- **Backend:** Node.js + Express + MongoDB + JWT
+- **Frontend:** React (Vite) with login / register / dashboard
