@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&family=Instrument+Serif:ital@0;1&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "DM Sans", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Instrument Serif", ui-serif, Georgia, serif;
+  --color-ink: #1a2e28;
+  --color-sage: #3d6b5a;
+  --color-mist: #e8f0ec;
+  --color-leaf: #2f6f55;
+  --color-paper: #f7faf8;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  min-height: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-sans);
+  color: var(--color-ink);
+  background: var(--color-paper);
+  -webkit-font-smoothing: antialiased;
+}
+
+@keyframes fade-up {
+  from {
+    opacity: 0;
+    transform: translateY(12px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes soft-pulse {
+  0%,
+  100% {
+    opacity: 0.45;
+  }
+  50% {
+    opacity: 0.75;
+  }
+}
+
+.animate-fade-up {
+  animation: fade-up 0.55s ease-out both;
+}
+
+.animate-fade-up-delay {
+  animation: fade-up 0.65s ease-out 0.12s both;
+}
+
+.bg-auth {
+  background:
+    radial-gradient(ellipse 80% 60% at 10% 20%, rgba(47, 111, 85, 0.18), transparent 55%),
+    radial-gradient(ellipse 70% 50% at 90% 80%, rgba(61, 107, 90, 0.14), transparent 50%),
+    linear-gradient(160deg, #f3f7f5 0%, #e6efe9 45%, #dce8e1 100%);
+}
+
+.bg-grid {
+  background-image:
+    linear-gradient(rgba(26, 46, 40, 0.04) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(26, 46, 40, 0.04) 1px, transparent 1px);
+  background-size: 28px 28px;
+}
